@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <com.lovejjfg.indexdemo.IndexBar
+        android:id="@+id/index_bar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/index_bar_bg"
+        app:indexSize="14sp"
+        app:normalColor="#ffff"
+        app:selecColor="#00f" />
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tv_index_bg"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/largeTextSize"
+        android:visibility="invisible" />
+
+</RelativeLayout>
